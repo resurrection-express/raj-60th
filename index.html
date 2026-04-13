@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 60th Birthday, Rajesh</title>
+    <meta name="description" content="Birthday wishes for Rajesh's 60th." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header class="hero">
+      <nav class="topbar">
+        <div class="nav-links">
+          <a href="#wishes">Wishes</a>
+          <a href="#photos">Photos</a>
+        </div>
+      </nav>
+
+      <div class="hero-canvas">
+        <!-- The massive 60 background -->
+        <div class="hero-bg-number" aria-hidden="true">60</div>
+
+        <!-- Content layered on top -->
+        <div class="hero-content">
+          <p class="hero-label">Rajesh</p>
+          <h1 class="hero-headline">Sixty <br>years <span class="hero-amp">&</span><br> counting.</h1>
+          <p class="hero-sub">A life of high performance, sharp wit,<br> and the occasional Honda-related detour.</p>
+          <div class="hero-rule"></div>
+          <p class="hero-plate">Est. 1966 &mdash; Rev. 2026</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#wishes">The Highlight Reel</a>
+            <a class="btn btn-secondary" href="#photos">The Archive</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ── Wishes ── -->
+      <section class="section" id="wishes">
+        <div class="section-heading">
+          <span>🎥</span>
+          <h2>Wishes</h2>
+        </div>
+
+        <div id="stack-view" class="stack-view">
+          <div class="stack-scene" id="stack-trigger" role="button" tabindex="0" aria-label="Open birthday wishes">
+            <div class="stack-card stack-back-3"></div>
+            <div class="stack-card stack-back-2"></div>
+            <div class="stack-card stack-back-1"></div>
+            <div class="stack-card stack-top">
+              <video id="stack-preview" preload="metadata" playsinline muted controlsList="nodownload"></video>
+              <div class="stack-overlay">
+                <div class="stack-play-btn">&#9654;</div>
+              </div>
+            </div>
+          </div>
+          <p class="stack-hint">Tap to open</p>
+        </div>
+      </section>
+
+      <!-- ── Photos ── -->
+      <section class="section" id="photos">
+        <div class="section-heading">
+          <span>📸</span>
+          <h2>Memories</h2>
+        </div>
+        <div class="bento-grid" id="bento-grid"></div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Made with love for Rajesh's 60th.</p>
+    </footer>
+
+    <!-- ── Video modal ── -->
+    <div id="video-modal" class="video-modal" hidden aria-modal="true" role="dialog">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-inner">
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">&times;</button>
+        <div class="modal-player-wrap">
+          <video id="main-video" controls playsinline controlsList="nodownload"></video>
+          <img id="audio-image" style="display:none" alt="">
+          <audio id="main-audio" controls style="display:none" controlsList="nodownload"></audio>
+        </div>
+        <div class="thumb-strip-wrap">
+          <div class="thumb-strip" id="thumb-strip"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="wishes.js"></script>
+    <script src="photos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
