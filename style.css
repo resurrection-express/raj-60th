@@ -52,14 +52,6 @@ p, li, a { font-size: 1.05rem; line-height: 1.75; color: var(--ink-soft); }
   z-index: 2;
 }
 
-.brand {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.5);
-  text-transform: uppercase;
-}
-
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a {
   text-decoration: none;
@@ -193,7 +185,7 @@ p, li, a { font-size: 1.05rem; line-height: 1.75; color: var(--ink-soft); }
   color: #0a0a1a;
 }
 .btn-primary:hover {
-  background: var(--silver-light);
+  background: #e8e8e8;
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
 }
@@ -494,17 +486,15 @@ p, li, a { font-size: 1.05rem; line-height: 1.75; color: var(--ink-soft); }
 /* ── Responsive ── */
 
 @media (max-width: 860px) {
-  .hero-canvas { min-height: 90vh; min-height: 90svh; }
-  .hero-bg-number { right: -15%; font-size: clamp(16rem, 45vw, 30rem); }
-  .hero-content { padding: 5rem 0; }
+  .hero-canvas { padding: 0 1.5rem; }
+  .hero-bg-number { right: -15%; font-size: clamp(14rem, 40vw, 28rem); }
   .bento-grid { columns: 3; }
 }
 
 @media (max-width: 560px) {
   .nav-links { gap: 1rem; }
-  .hero-bg-number { right: -25%; font-size: 14rem; }
-  .hero-headline { font-size: 2.4rem; }
-  .hero-sub br { display: none; }
+  .hero-bg-number { right: -25%; font-size: 12rem; }
+  .hero-headline { font-size: 2.6rem; }
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .stack-scene { width: 220px; height: 300px; }
   .bento-grid { columns: 2; }
