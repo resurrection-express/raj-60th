@@ -33,5 +33,7 @@ const wishes = [
   "WhatsApp Video 2026-04-13 at 11.18.20.mp4",
   "WhatsApp Video 2026-04-13 at 11.18.28.mp4",
   "WhatsApp Video 2026-04-13 at 15.36.15.mp4",
+  "WhatsApp Video 2026-04-14 at 23.01.39.mp4",
+  "20260411_215124.mp4",
   { type: "audio", audio: "AUDIO-2026-04-10-07-18-42.m4a", image: "PHOTO-2026-04-10-20-34-13.jpg" },
 ];
